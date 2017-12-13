@@ -5,11 +5,11 @@
 ### 1장 오브젝트와 의존관계
 - - - - - -
 USERS테이블
- 필드명     |     타입     |         설정        |
- -------  | ----------- | ------------------
-  id      | VARCHAR(10) | Primary Key        |
- name     | VARCHAR(20) | Not Null           |
- Password | VARCHAR(20) | Not Null           |
+|필드명|타입|설정|
+|-----|----|----|
+|id|VARCHAR(10)|Primary Key|
+|Name|VARCHAR(20)|Not Null|
+|Password|VARCHAR(20)|Not Null|
 
 
 **자바빈**
