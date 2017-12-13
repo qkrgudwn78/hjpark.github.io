@@ -1,1 +1,72 @@
-# í† ë¹„ ìŠ¤í”„ë§ ê³µë¶€ìš©
+# Åäºñ ½ºÇÁ¸µ °øºÎ¿ë
+
+## VOl. 1 ½ºÇÁ¸µÀÇ ÀÌÇØ¿Í ¿ø¸® 
+***
+### 1Àå ¿ÀºêÁ§Æ®¿Í ÀÇÁ¸°ü°è
+- - - - - -
+USERSÅ×ÀÌºí
+| ÇÊµå¸í     |     Å¸ÀÔ     |         ¼³Á¤        |
+| -------- | ----------- | ------------------ |
+|  id      | VARCHAR(10) | Primary Key        |
+| name     | VARCHAR(20) | Not Null           |
+| Password | VARCHAR(20) | Not Null           |
+
+
+==ÀÚ¹Ùºó==
+ÀÚ¹ÙºóÀº ºñÁÖ¾ó Åø¿¡¼­ Á¶ÀÛ °¡´ÉÇÑ ÄÄÆ÷³ÍÆ®¸¦ ¸»ÇÔ.
+  jsp¿¡¼­ °´Ã¼¸¦ °¡Á®´Ù°¡ »ç¿ëÇÒ¼ö ÀÖµµ·Ï ÇÑ ±â¹ý.
+==ÀÚ¹Ùºó==ÀÇ »ç¿ë ¸ñÀû
+ 1. µðÀÚÀÌ³Ê°¡ ÀÛ¾÷ÇÏ´Â È­¸é Ç¥ÃâºÎºÐ(view) ºÎºÐ°ú ÇÁ·Î±×·¡¸Ó°¡ ÀÛ¾÷¤¾³ª´À ·ÎÁ÷(model) ºÎºÐÀ» ºÐ¸®½ÃÅ°±â À§ÇØ¼­.
+ 2. jspÆäÀÌÁö¿¡ È­¸é Ç¥ÃâºÎºÐ°ú ·ÎÁ÷µéÀÌ È¥ÀçÇÑ ÇüÅÂÀÇ ÄÚµå´Â Àç»ç¿ëÀÌ ¾î·Æ´Ù.
+
+ jsp Based ==ÀÚ¹Ùºó==ÀÇ °³¹ß ±Ô°Ý
+ + µðÆúÆ® »ý¼ºÀÚ°¡ ÀÖ¾î¾ß ÇÑ´Ù.
+ + ÆÐÅ°ÁöÈ­¸¦ ÇØ¾ßÇÑ´Ù.(µðÆúÆ® ÆÐÅ°Áö´Â Çã¿ëÇÏÁö ¾ÊÀ½) - ÆÐÅ°ÁöÈ­°¡ µÇ¾îÀÖÁö ¾ÊÀ¸¸é jsp¿¡¼­ ÀÎ½ÄÇÒ ¼ö ¾ø´Ù.
+
+ ¿©±â ¼³¸í¿¡¼­´Â ==ÀÚ¹Ùºó== Àº DTO °°´Ù.
+==¼­ºí¸´==
+¼­ºí¸´Àº Å¬¶óÀÌ¾ðÆ® ¿äÃ»À» Ã³¸®ÇÏ°í ±× °á°ú¸¦ ´Ù½Ã Å¬¶óÀÌ¾ðÆ®¿¡°Ô Àü¼ÛÇÏ´Â Servlet Å¬·¡½ºÀÇ ±¸Çö ±ÔÄ¢À» ÁöÅ² ÀÚ¹Ù ÇÁ·Î±×·¥.
+
+¼­ºí¸´À» °ü¸®ÇØÁÖ´Â ==¼­ºí¸´ ÄÁÅ×ÀÌ³Ê==´Â ¼­ºí¸´ÀÇ »ý¸íÁÖ±â¸¦ °ü¸®ÇÏ°í ¿äÃ»¿¡ µû¸¥ ½º·¹µå¸¦ »ý¼ºÇØÁØ´Ù.
+
+¼­ºí¸´ ÄÁÅ×ÀÌ³ÊÀ¸ ¿ªÇÒ
++ Åë½Å Áö¿ø - À¥¼­¹ö°¡ Åë½ÅÇÒ ¼ö ÀÖ´Â ¼Õ½¬¿î¹æ¹ýÀ» Á¦°øÇÑ´Ù.
++ »ý¸íÁÖ±â °ü¸® - ¼­ºí¸´ ÄÁÅ×ÀÌ³Ê°¡ ±âµ¿µÇ´Â ¼ø°£ ¼­ºí¸´ Å¬·¡½º¸¦ ·ÎµùÇØ¼­ ÀÎ½ºÅÏ½ºÈ­ ÇÏ°í , ¼­ºí¸´ÀÇ »ý¸íÀÌ ´ÙÇÏ´Â ¼ø°£ °¡ºñÁö ÄÃ·º¼ÇÀ» ÁøÇàÇÑ´Ù.
++ ¸ÖÆ¼½º·¹µù °ü¸® - µ¿½ÃÀÇ ¿©·¯ ¿äÃ»ÀÌ µé¾î¿Â´Ù¸é ¸ÖÆ¼½º·¹µù È¯°æÀ¸·Î µ¿½Ã´Ù¹ßÀûÀÎ ÀÛ¾÷À» °ü¸®ÇÑ´Ù.
++ ¼±¾ðÀûÀÎ º¸¾È°ü¸® - ¼­ºí¸´ ÄÁÅ×ÀÌ³Ê´Â º¸¾È °ü·ÃµÈ ±â´ÉÀ» Áö¿øÇÏ¹Ç·Î ¼­ºí¸´ ÄÚµå ¾È¿¡ º¸¾È °ü·ÃµÈ ¸Þ¼Òµå¸¦ ±¸ÇöÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
++ jsp Áö¿ø
+
+==ÅèÄ¹==
+ÅèÄ¹Àº ¼­ºí¸´ ÄÁÅ×ÀÌ³ÊÀÌ´Ù. À¥¼­¹ö¿Í ¿¬µ¿ÇÏ¿© ½ÇÇàÇÒ ¼ö ÀÖ´Â ÀÚ¹ÙÈ¯°æÀ» Á¦°øÇÏ°í jsp¿Í ÀÚ¹Ù ¼­ºí¸´ÀÌ ½ÇÇàÇÒ ¼ö ÀÖ´Â È¯°æÀ» Á¦°øÇÏ°í ÀÖ´Ù.
+¿äÁò ÅèÄ¹ÀÇ ¹öÁ¯ÀÌ ¿Ã¶ó°¡¸é¼­  À¥ ¼­¹öÀÇ ±â´Éµµ ÃæºÐÈ÷ Àß ¼öÇàÇÏ±â ¶§¹®¿¡ ±»ÀÌ À¥¼­¹ö¿Í WAS¸¦ ³ª´²¼­ »ý°¢ÇÏÁö ¾Ê¾Æµµ µÈ´Ù.
+
+==À¥¼­¹ö== ¿Í ==WAS==ÀÇ Â÷ÀÌ
+
++ À¥¼­¹ö¶õ Web Client(À¥ ºê¶ó¿ìÀú)¿¡°Ô Á¦°øÇÏ´Â ÄÁÅÙÃ÷¸¦ Á¦°øÇÏ´Â ¼­¹ö. Á¤ÀûÀÎ HTML È¤Àº jpeg³ª gif°°Àº ÀÌ¹ÌÁö¸¦ HTTP ÇÁ·ÎÅäÄÝÀ» ÅëÇØ À¥ ºê¶ó¿ìÀú·Î Á¦°ø.
+
++ WAS¶õ Server´Ü¿¡¼­ ¾îÇÃ¸®ÄÉÀÌ¼ÇÀ» µ¿ÀÛÇÒ ¼ö ÀÖµµ·Ï Áö¿ø. ÀÏ¹ÝÀûÀ¸·Î ÄÁÅ×ÀÌ³Ê¶ó´Â ¿ë¾î·Î »ç¿ëµÊ. Servlet, JSP, ASP, PHP µîÀÇ ÇÁ·Î±×·¥À¸·Î »ç¿ëµÊ.
+
+ÃÊ±â WEB : ÀÌ¹ÌÁö È¤Àº ´Ü¼ø HTML
+ÇöÀç: °Ô½ÃÆÇ, ¹æ¸í·Ï µî Server-Client°£ »óÈ£´ëÈ­¶ó´Â ÆäÀÌÁö¸¦ Á¦°ø. -> ³»ºÎ ¾îÇÃ¸®ÄÉÀÌ¼ÇÀ» µ¿ÀÛ½ÃÅ³ ¼ö ÀÖ´Â ÄÁÅ×ÀÌ³Ê¸¦ ³»Àå. µ¿ÀûÀÎ ¿ä±¸¿¡ ´óÀÀÇÏ±â À§ÇØ ÀÌ¿¡ ÀûÇÕÇÑ ÇüÅÂ·Î º¯È­.
+
+°¢ »çÀÌÆ®°¡ ¸¹Àº »ç¿ëÀÚ¿¡°Ô ¿øÈ°ÇÑ ¼­ºñ½º¸¦ Á¦°øÇÏ±â À§ÇØ ±â´ÉÀûÀÎ layer¸¦ ³ª´©°Ô µÊ. -> ¿©±â¼­ À¥¼­¹ö¿Í WASÀÇ ±¸ºÐÀÌ ³ªÅ¸³ª°ÔµÊ.
+
++ À¥¼­¹ö ±â´É
+
+1. Clustering ±â´É: »ç¿ëÀÚ ¿äÃ»ÀÌ ¹ß»ýÇÏ¸é »óÈ²¿¡ µû¶ó °¢°¢ÀÇ WAS¿¡ ¿äÃ»À» ³Ñ±è.
+2. Cache ±â´É: css, js, image µîÀÇ ¸®¼Ò½º ÆÄÀÏÀ» °¡Áö°í ÀÕ´Ù°¡ WAS¸¦ °ÅÄ¡Áö ¾Ê°í »ç¿ëÀÚ¿¡°Ô Á÷Á¢ ³Ñ±è. »ç¿ëÀÚ´Â cache periodµ¿¾È Àü´Þ¹ÞÀº ¸®¼Ò½º¸¦ »ç¿ëÇÔ.
+
++ WAS ±â´É
+
+1. Servlet ÆäÀÌÁö¸¦ html ÇüÅÂ·Î º¯È¯ÇÔ. ex) jsp °æ¿ì jsp¸¦ WAS¿¡¼­ java classÆÄÀÏ·Î ÄÄÆÄÀÏ ÈÄ htmlÇüÅÂÀÇ ÆäÀÌÁö¸¦ »ç¿ëÀÚ¿¡°Ô Àü´ÞÇÏ°Ô µÊ.
+
+
++WAS Á¾·ù
+tomcat, tMax jeus, BEA Web Logic, IBM Webspere, Oracle
+
++À¥¼­¹ö Á¾·ù
+IIS, apache, tMax, WebtoB
+
+- tomcat(WAS) : ÅèÄ¹Àº ÀÚÃ¼ÀûÀ¸·Î º¸À¯ÇÏ°í ÀÖ´Â ³»ºÎ À¥¼­¹ö¿Í ÇÔ²² µ¶¸³ÀûÀ¸·Î »ç¿ë µÉ ¼öµµ ÀÖÁö¸¸ ¾ÆÆÄÄ¡ ³Ý½ºÄÉÀÌÇÁ ¿£ÅÍÇÁ¶óÀÌÁî ¼­¹ö, IIS, ¸¶ÀÌÅ©·Î¼ÒÇÁÆ®ÀÇ PSW µî ´Ù¸¥ À¥¼­¹ö¿Í ÇÔ²² »ç¿ëµÉ ¼öµµ ÀÖ´Ù.
+
+ 
